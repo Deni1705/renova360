@@ -4,32 +4,61 @@
       <router-link to="/" class="logo">
         <img src="../assets/logo.png" alt="Renova360 Logo">
       </router-link>
+      <div class="navbar-burger" @click="toggleMenu" :class="{ 'is-active': isMenuActive }">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
-    <div class="navbar-menu">
-      <router-link to="/" class="navbar-item"><strong>Home</strong></router-link>
-      <router-link to="/sobre-nos" class="navbar-item"><strong>Sobre Nós</strong></router-link>
+    <div class="navbar-menu" :class="{ 'is-active': isMenuActive }">
+      <router-link to="/" class="navbar-item" @click="closeMenu"><strong>Home</strong></router-link>
+      <router-link to="/sobre-nos" class="navbar-item" @click="closeMenu"><strong>Sobre Nós</strong></router-link>
       <div class="navbar-item has-dropdown">
-        <a class="navbar-link"><strong>Soluções</strong></a>
-        <div class="navbar-dropdown">
-          <router-link to="/solucoes/gestao-comercial" class="navbar-item">Gestão Comercial</router-link>
-          <router-link to="/solucoes/gestao-de-pessoas" class="navbar-item">Gestão de Pessoas</router-link>
-          <router-link to="/solucoes/gestao-estrategica" class="navbar-item">Gestão Estratégica</router-link>
-          <router-link to="/solucoes/gestao-financeira" class="navbar-item">Gestão Financeira</router-link>
-          <router-link to="/solucoes/marketing-e-comunicacao" class="navbar-item">Marketing e Comunicação</router-link>
-          <router-link to="/solucoes/operacao" class="navbar-item">Operação</router-link>
-          <router-link to="/solucoes/sustentabilidade-esg" class="navbar-item">Sustentabilidade e ESG</router-link>
+        <a class="navbar-link" @click="toggleDropdown"><strong>Soluções</strong></a>
+        <div class="navbar-dropdown" :class="{ 'is-active': isDropdownActive }">
+          <router-link to="/solucoes/gestao-comercial" class="navbar-item" @click="closeMenu">Gestão Comercial</router-link>
+          <router-link to="/solucoes/gestao-de-pessoas" class="navbar-item" @click="closeMenu">Gestão de Pessoas</router-link>
+          <router-link to="/solucoes/gestao-estrategica" class="navbar-item" @click="closeMenu">Gestão Estratégica</router-link>
+          <router-link to="/solucoes/gestao-financeira" class="navbar-item" @click="closeMenu">Gestão Financeira</router-link>
+          <router-link to="/solucoes/marketing-e-comunicacao" class="navbar-item" @click="closeMenu">Marketing e Comunicação</router-link>
+          <router-link to="/solucoes/operacao" class="navbar-item" @click="closeMenu">Operação</router-link>
+          <router-link to="/solucoes/sustentabilidade-esg" class="navbar-item" @click="closeMenu">Sustentabilidade e ESG</router-link>
         </div>
       </div>
-      <router-link to="/eventos" class="navbar-item"><strong>Eventos</strong></router-link>
-      <router-link to="/blog" class="navbar-item"><strong>Blog/Artigos</strong></router-link>
-      <router-link to="/contato" class="navbar-item"><strong>Contato</strong></router-link>
+      <router-link to="/eventos" class="navbar-item" @click="closeMenu"><strong>Eventos</strong></router-link>
+      <router-link to="/blog" class="navbar-item" @click="closeMenu"><strong>Blog/Artigos</strong></router-link>
+      <router-link to="/contato" class="navbar-item" @click="closeMenu"><strong>Contato</strong></router-link>
     </div>
   </nav>
 </template>
 
 <script>
 export default {
-  name: 'RenovaNavegacao'
+  name: 'RenovaNavegacao',
+  data() {
+    return {
+      isMenuActive: false,
+      isDropdownActive: false
+    }
+  },
+  methods: {
+    toggleMenu() {
+      this.isMenuActive = !this.isMenuActive;
+      if (!this.isMenuActive) {
+        this.isDropdownActive = false;
+      }
+    },
+    toggleDropdown(event) {
+      if (window.innerWidth <= 768) {
+        event.preventDefault();
+        this.isDropdownActive = !this.isDropdownActive;
+      }
+    },
+    closeMenu() {
+      this.isMenuActive = false;
+      this.isDropdownActive = false;
+    }
+  }
 }
 </script>
 
@@ -44,14 +73,68 @@ export default {
   height: 90px;
 
   .navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
     .logo {
       display: inline-block;
+
+      img {
+        height: 80px;
+        width: auto;
+        transition: all 0.3s ease;
+      }
     }
 
-    .logo img {
-      height: 100px;
-      width: auto;
-      transition: all 0.3s ease;
+    .navbar-burger {
+      display: none;
+      cursor: pointer;
+      height: 3.25rem;
+      width: 3.25rem;
+      position: relative;
+
+      span {
+        background-color: #2F6999;
+        display: block;
+        height: 1px;
+        left: calc(50% - 8px);
+        position: absolute;
+        transform-origin: center;
+        transition-duration: 0.2s;
+        transition-property: background-color, opacity, transform;
+        transition-timing-function: ease-out;
+        width: 16px;
+
+        &:nth-child(1) {
+          top: calc(50% - 6px);
+        }
+
+        &:nth-child(2) {
+          top: calc(50% - 1px);
+        }
+
+        &:nth-child(3) {
+          top: calc(50% + 4px);
+        }
+      }
+
+      &.is-active {
+        span {
+          &:nth-child(1) {
+            transform: translateY(5px) rotate(45deg);
+          }
+
+          &:nth-child(2) {
+            opacity: 0;
+          }
+
+          &:nth-child(3) {
+            transform: translateY(-5px) rotate(-45deg);
+          }
+        }
+      }
     }
   }
 
@@ -64,13 +147,14 @@ export default {
       height: 100%;
       display: flex;
       align-items: center;
-      color: #2F6999; // Mantido a cor original
+      color: #2F6999;
       text-decoration: none;
       padding: 0 1rem;
       transition: color 0.3s ease;
+      white-space: nowrap;
 
       &:hover {
-        color: #D35F8E; // Mantido a cor original do hover
+        color: #D35F8E;
       }
     }
 
@@ -79,10 +163,6 @@ export default {
       height: 100%;
       display: flex;
       align-items: center;
-
-      &:hover .navbar-dropdown {
-        display: block;
-      }
 
       .navbar-link {
         cursor: pointer;
@@ -101,6 +181,10 @@ export default {
         box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         z-index: 1000;
 
+        &.is-active {
+          display: block;
+        }
+
         .navbar-item {
           display: block;
           width: 100%;
@@ -108,7 +192,7 @@ export default {
           white-space: nowrap;
 
           &:hover {
-            background-color: rgba(134, 103, 147, 0.1); // Cor do hover do dropdown atualizada
+            background-color: rgba(134, 103, 147, 0.1);
           }
         }
       }
@@ -116,7 +200,7 @@ export default {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   .navbar {
     flex-direction: column;
     height: auto;
@@ -124,14 +208,24 @@ export default {
 
     .navbar-brand {
       .logo img {
-        height: 50px;
+        height: 60px;
+      }
+
+      .navbar-burger {
+        display: block;
       }
     }
 
     .navbar-menu {
+      display: none;
       flex-direction: column;
       width: 100%;
       align-items: flex-start;
+      padding-top: 1rem;
+
+      &.is-active {
+        display: flex;
+      }
 
       .navbar-item {
         width: 100%;
@@ -141,15 +235,38 @@ export default {
       .has-dropdown {
         width: 100%;
 
+        .navbar-link {
+          width: 100%;
+          justify-content: space-between;
+
+          &::after {
+            content: '\25BC';
+            font-size: 0.8em;
+            margin-left: 0.5em;
+          }
+        }
+
         .navbar-dropdown {
           position: static;
           display: none;
           width: 100%;
-        }
+          padding-left: 1rem;
 
-        &:hover .navbar-dropdown {
-          display: block;
+          &.is-active {
+            display: block;
+          }
         }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1215px) {
+  .navbar {
+    .navbar-menu {
+      .navbar-item {
+        padding: 0 0.5rem;
+        font-size: 0.9rem;
       }
     }
   }
