@@ -1,5 +1,5 @@
 <template>
-  <div class="gestao-pessoas">
+  <div class="gestao-de-pessoas">
     <NavegacaoBreadcrumbs current-page="Gestão Pessoas" />
     
     <section class="intro">

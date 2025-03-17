@@ -1,5 +1,5 @@
 <template>
-  <div class="marketing-comunicacao">
+  <div class="marketing-e-comunicacao">
     <NavegacaoBreadcrumbs current-page="Marketing e Comunicação" />
     
     <section class="intro">
