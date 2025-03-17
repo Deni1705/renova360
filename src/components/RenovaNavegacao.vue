@@ -13,7 +13,7 @@
     <div class="navbar-menu" :class="{ 'is-active': isMenuActive }">
       <router-link to="/" class="navbar-item" @click="closeMenu"><strong>Home</strong></router-link>
       <router-link to="/sobre-nos" class="navbar-item" @click="closeMenu"><strong>Sobre Nós</strong></router-link>
-      <div class="navbar-item has-dropdown">
+      <div class="navbar-item has-dropdown" @mouseover="showDropdown" @mouseout="hideDropdown">
         <a class="navbar-link" @click="toggleDropdown"><strong>Soluções</strong></a>
         <div class="navbar-dropdown" :class="{ 'is-active': isDropdownActive }">
           <router-link to="/solucoes/gestao-comercial" class="navbar-item" @click="closeMenu">Gestão Comercial</router-link>
@@ -49,14 +49,22 @@ export default {
       }
     },
     toggleDropdown(event) {
-      if (window.innerWidth <= 768) {
-        event.preventDefault();
-        this.isDropdownActive = !this.isDropdownActive;
-      }
+      event.preventDefault();
+      this.isDropdownActive = !this.isDropdownActive;
     },
     closeMenu() {
       this.isMenuActive = false;
       this.isDropdownActive = false;
+    },
+    showDropdown() {
+      if (window.innerWidth > 1023) {
+        this.isDropdownActive = true;
+      }
+    },
+    hideDropdown() {
+      if (window.innerWidth > 1023) {
+        this.isDropdownActive = false;
+      }
     }
   }
 }
@@ -251,6 +259,28 @@ export default {
           display: none;
           width: 100%;
           padding-left: 1rem;
+
+          &.is-active {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar {
+    .navbar-menu {
+      .has-dropdown {
+        .navbar-dropdown {
+          display: none;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          background-color: #f8f9fa;
+          box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+          z-index: 1000;
 
           &.is-active {
             display: block;

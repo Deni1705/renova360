@@ -190,7 +190,7 @@ export default {
 }
 
 @media (max-width: 768px) {
-  .gestao-comercial {
+  .operacao {
     padding: 1rem;
 
     .cards-container {
