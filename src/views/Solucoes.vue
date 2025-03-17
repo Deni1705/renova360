@@ -36,7 +36,7 @@ export default {
           id: 2,
           title: 'Gestão de Pessoas',
           description: 'Desenvolva e gerencie talentos para criar uma cultura organizacional de alto desempenho.',
-          link: '/solucoes/gestao-pessoas'
+          link: '/solucoes/gestao-de-pessoas'
         },
         {
           id: 3,

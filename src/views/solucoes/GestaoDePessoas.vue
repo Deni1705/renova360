@@ -83,7 +83,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.gestao-pessoas {
+.gestao-de-pessoas {
   max-width: 800px;
   margin: 0 auto;
   padding: 2rem;
@@ -202,7 +202,7 @@ export default {
 }
 
 @media (max-width: 768px) {
-  .gestao-pessoas {
+  .gestao-de-pessoas {
     padding: 1rem;
 
     .cards-container {

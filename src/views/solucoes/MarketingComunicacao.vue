@@ -70,7 +70,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.marketing-comunicacao {
+.marketing-e-comunicacao {
   max-width: 800px;
   margin: 0 auto;
   padding: 2rem;
@@ -189,7 +189,7 @@ export default {
 }
 
 @media (max-width: 768px) {
-  .marketing-comunicacao {
+  .marketing-e-comunicacao {
     padding: 1rem;
 
     .cards-container {

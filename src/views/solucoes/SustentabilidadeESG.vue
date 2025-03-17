@@ -188,7 +188,7 @@ export default {
 }
 
 @media (max-width: 768px) {
-  .gestao-comercial {
+  .sustentabilidade_esg {
     padding: 1rem;
 
     .cards-container {
