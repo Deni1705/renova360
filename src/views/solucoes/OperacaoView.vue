@@ -1,6 +1,6 @@
 <template>
   <div class="operacao">
-    <NavegacaoBreadcrumbs current-page="Operação" />
+    <NavegacaoBreadcrumbs current-page="Operação" /><!-- Este é um comentário HTML -->
     
     <section class="intro">
       <h1>Operação</h1>

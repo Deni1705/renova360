@@ -1,5 +1,5 @@
 <template>
-  <div class="gestao-estrategica">
+  <div class="gestao-estrategica"><!-- Este é um comentário HTML -->
     <NavegacaoBreadcrumbs current-page="Gestão Estratégica" />
     
     <section class="intro">

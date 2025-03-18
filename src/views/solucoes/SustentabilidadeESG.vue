@@ -1,5 +1,5 @@
 <template>
-  <div class="sustentabilidade-esg">
+  <div class="sustentabilidade-esg"><!-- Este é um comentário HTML -->
     <NavegacaoBreadcrumbs current-page="Sustentabilidade e ESG" />
     
     <section class="intro">

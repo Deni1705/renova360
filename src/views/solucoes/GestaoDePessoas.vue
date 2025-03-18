@@ -1,5 +1,5 @@
 <template>
-  <div class="gestao-de-pessoas">
+  <div class="gestao-de-pessoas"><!-- Este é um comentário -->
     <NavegacaoBreadcrumbs current-page="Gestão Pessoas" />
     
     <section class="intro">

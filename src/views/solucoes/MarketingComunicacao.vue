@@ -1,5 +1,5 @@
 <template>
-  <div class="marketing-e-comunicacao">
+  <div class="marketing-e-comunicacao"><!-- Este é um comentário HTML -->
     <NavegacaoBreadcrumbs current-page="Marketing e Comunicação" />
     
     <section class="intro">
