@@ -10,14 +10,12 @@
       <p>
         Ela envolve desde a criação de estratégias para atrair e engajar clientes até a gestão da imagem da empresa no mercado.
       </p>
-      <p>No segmento de saúde, beleza e bem-estar, essa área é ainda mais relevante, pois lida diretamente com um público que busca não apenas produtos e serviços, mas também experiências e soluções que promovam seu bem-estar.
-      </p>
     </section>
 
     <section class="benefits">
       <h2>Importância do Marketing e Comunicação</h2>
       <p>
-        É o coração da conexão entre a empresa e seu público no segmento de saúde, beleza e bem-estar.
+        É o coração da conexão entre a empresa e seu público.
       </p>
       <p>
         Com estratégias criativas, análises de mercado e uma comunicação eficiente, essa área garante que a marca seja reconhecida, valorizada e preferida pelos consumidores.

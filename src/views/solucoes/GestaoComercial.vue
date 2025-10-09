@@ -5,7 +5,7 @@
     <section class="intro">
       <h1>Gestão Comercial</h1>
       <p>
-        No segmento de saúde, beleza e bem-estar, os consumidores estão cada vez mais exigentes, buscando não apenas produtos e serviços de qualidade, mas também experiências memoráveis e soluções que promovam seu bem-estar integral. 
+        Em qualquer segmento, os consumidores estão cada vez mais exigentes, buscando não apenas produtos e serviços de qualidade, mas também experiências memoráveis e soluções que promovam seu bem-estar integral. 
       </p>
       <p>
         A Gestão Comercial atua como uma ponte entre a empresa e o cliente, garantindo que as estratégias de vendas estejam alinhadas com as expectativas do mercado e os valores da empresa.    

@@ -10,15 +10,12 @@
       <p>
         Seu objetivo é otimizar recursos, reduzir custos e garantir que os produtos e serviços sejam entregues com qualidade e no prazo certo.
       </p>
-      <p>
-        No segmento de saúde, beleza e bem-estar, a Operação é crucial, pois lida diretamente com a entrega de experiências que impactam o bem-estar e a satisfação dos clientes.
-      </p>
     </section>
 
     <section class="benefits">
       <h2>Importância da Operação</h2>
       <p>
-        É o alicerce que sustenta a eficiência e a qualidade de uma empresa do segmento de saúde, beleza e bem-estar. Com foco na otimização de processos, gestão de qualidade e experiência do cliente, essa área garante que a empresa opere de forma sustentável e entregue resultados excepcionais.
+        É o alicerce que sustenta a eficiência e a qualidade de uma empresa. Com foco na otimização de processos, gestão de qualidade e experiência do cliente, essa área garante que a empresa opere de forma sustentável e entregue resultados excepcionais.
       </p>
     </section>
 

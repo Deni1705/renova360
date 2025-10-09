@@ -23,14 +23,6 @@
       <p>
         Isso envolve desde o controle de custos e fluxo de caixa até o planejamento de investimentos e a análise de rentabilidade.
       </p>
-      <p>
-        No segmento de saúde, beleza e bem-estar, a Gestão Financeira é ainda mais crítica, pois o setor envolve altos investimentos em:
-      </p>
-      <ul>
-        <li>Tecnologia;</li>
-        <li>Insumos de qualidade e mão-de-obra especializada;</li>
-        <li>Além de estar sujeito a flutuações de demanda e regulamentações específicas.</li>
-      </ul>
     </section>
     
     <div class="cards-container">
@@ -50,7 +42,6 @@
           <li>Outsourcing Gestão Financeira;</li>
           <li>Plano Estratégico para redução de custos operacionais e aumento da receita;</li>
           <li>Planejamento financeiro de longo prazo para sustentabilidade e crescimento;</li>
-          <li>Conformidade e Regulamentações da área de saúde, beleza e bem estar.</li>
         </ul>
       </div>
     </div>

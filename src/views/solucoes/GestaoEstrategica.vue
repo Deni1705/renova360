@@ -20,14 +20,6 @@
       <p>
         Ela envolve a análise do ambiente interno e externo, a definição de metas claras e a criação de planos para alcançá-las. Em resumo, é a bússola que guia a empresa em direção ao sucesso sustentável.
       </p>
-      <p>
-        No segmento de saúde, beleza e bem-estar, a Gestão Estratégica é ainda mais relevante, pois o setor é altamente dinâmico, com mudanças constantes nas:
-      </p>
-      <ul>
-        <li>Preferências dos consumidores;</li>
-        <li>Avanços tecnológicos;</li>
-        <li>Regulamentações específicas.</li>
-      </ul>
     </section>
 
     <section class="conclusion">

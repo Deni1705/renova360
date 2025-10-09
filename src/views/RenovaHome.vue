@@ -8,7 +8,7 @@
     <section class="hero">
       <div class="hero-content">
         <h1>Transforme Desafios em Resultados</h1>
-        <p>Consultoria e Treinamento especializado em Saúde, Beleza e Bem Estar para inovar a gestão da sua empresa.</p>
+        <p>Consultoria estratégica e treinamento especializado para pequenas e médias empresas.</p>
         <button @click="contact" class="cta-button">Entre em Contato</button>
       </div>
     </section>
@@ -28,7 +28,7 @@
             <span class="highlight">Programa Reconecta</span>
           </h2>
           <p class="subtitle">
-            Uma jornada sensorial e imersiva, focada nos <b>6 sentidos</b>, que coloca o profissional da beleza no centro do cuidado.
+            Uma jornada sensorial e imersiva, focada nos <b>6 sentidos</b>, que coloca o seu time no centro do autocuidado, mostrando que a sua empresa se preocupa com a saúde mental dos seus colaboradores.
           </p>
           <ul>
             <li>Melhoria do bem-estar</li>
@@ -46,8 +46,8 @@
       <h2>Sobre Nós</h2>
       <p>Somos uma empresa de Consultoria Empresarial, Treinamento e Desenvolvimento de Pessoas.
         Com sede em Curitiba, Paraná, somos dedicados a oferecer soluções completas para a gestão da sua empresa.
-        Através de uma abordagem integrada, humanizada e personalizada, auxiliamos organizações dos setores de Saúde,
-        Beleza e Bem Estar a alcançarem excelência operacional e competitividade no mercado.</p>
+        Através de uma abordagem integrada, humanizada e personalizada, auxiliamos pequenas e micro empresas a 
+        alcançarem excelência operacional e competitividade no mercado.</p>
     </section>
 
     <section class="solutions-highlight">
@@ -80,6 +80,18 @@
         <div class="solution-card" @click="navigateToSolution('sustentabilidade-esg')">
           <h3>Sustentabilidade e ESG</h3>
           <p>Integre práticas sustentáveis e responsáveis ao seu negócio.</p>
+        </div>
+        <div class="solution-card" @click="navigateToSolution('erpcompleto')">
+          <h3>ERP Renova360</h3>
+          <p>Gestão eficiente para todas as áreas da sua empresa</p>
+        </div>
+        <div class="solution-card" @click="navigateToSolution('inteligencia-artificial')">
+          <h3>IA - Agentes Personalizados Renova360</h3>
+          <p>CRM automatizado e Agentes personalizados</p>
+        </div>
+        <div class="solution-card" @click="navigateToSolution('kommo')">
+          <h3>Parceria Kommo</h3>
+          <p>CRM - Agentes Personalizados Kommo</p>
         </div>
       </div>
     </section>

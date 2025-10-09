@@ -219,6 +219,11 @@ export default {
           url: "https://besociall.com.br/",
           logo: require("../assets/Parceiro2.png"),
         },
+        {
+          name: "Kommo",
+          url: "https://www.kommo.com/",
+          logo: require("../assets/badge_dark.png"),
+        },
       ]
     }
   },

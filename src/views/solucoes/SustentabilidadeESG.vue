@@ -10,15 +10,12 @@
       <p>
         Seu objetivo é garantir que o negócio opere de forma responsável, ética e sustentável, gerando impacto positivo para o meio ambiente, a sociedade e os stakeholders.
       </p>
-      <p>
-        No segmento de saúde, beleza e bem-estar, essa área é especialmente relevante, pois os consumidores estão cada vez mais conscientes e exigentes em relação às práticas das marcas que escolhem.
-      </p>
     </section>
 
     <section class="benefits">
       <h2>Importância da Sustentabilidade e ESG</h2>
       <p>
-        É essencial para empresas do segmento de saúde, beleza e bem-estar que desejam operar de forma responsável e sustentável. Com foco em práticas ambientais, sociais e de governança, essa área garante que a empresa não apenas cumpra suas obrigações, mas também gere impacto positivo para o meio ambiente, a sociedade e seus stakeholders. 
+        É essencial para empresas que desejam operar de forma responsável e sustentável. Com foco em práticas ambientais, sociais e de governança, essa área garante que a empresa não apenas cumpra suas obrigações, mas também gere impacto positivo para o meio ambiente, a sociedade e seus stakeholders. 
       </p>
     </section>
 

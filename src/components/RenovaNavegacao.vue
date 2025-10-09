@@ -28,6 +28,7 @@
       <router-link to="/eventos" class="navbar-item" @click="closeMenu"><strong>Eventos</strong></router-link>
       <router-link to="/blog" class="navbar-item" @click="closeMenu"><strong>Blog/Artigos</strong></router-link>
       <router-link to="/contato" class="navbar-item" @click="closeMenu"><strong>Contato</strong></router-link>
+      <router-link to="/parceiros" class="navbar-item" @click="closeMenu"><strong>Parceiros</strong></router-link>
     </div>
   </nav>
 </template>

@@ -5,7 +5,7 @@
     <section class="intro">
       <h1>Gestão de Pessoas</h1>
       <p>
-        A Gestão de Pessoas é o pilar que sustenta o capital humano de uma empresa do segmento de saúde, beleza e bem-estar.
+        A Gestão de Pessoas é o pilar que sustenta o capital humano de qualquer organização.
       </p>
       <p>
         Com foco no desenvolvimento, engajamento e bem-estar dos colaboradores, essa área garante que a empresa entregue experiências excepcionais aos clientes e se mantenha competitiva no mercado.     
@@ -18,13 +18,13 @@
     <section class="benefits">
       <h2>Importância da Gestão de Pessoas</h2>
       <p>
-        E a área responsável por cuidar do capital humano de uma empresa, garantindo que os colaboradores estejam engajados, capacitados e alinhados com os objetivos organizacionais.
+        É a área responsável por cuidar do capital humano de uma empresa, garantindo que os colaboradores estejam engajados, capacitados e alinhados com os objetivos organizacionais.
       </p>
       <p>
         Seu papel vai além da administração de folha de pagamento e benefícios; ela envolve a criação de um ambiente de trabalho positivo, o desenvolvimento de talentos e a promoção de uma cultura organizacional forte.
       </p>
       <p>
-        No segmento de saúde, beleza e bem-estar, a Gestão de Pessoas é ainda mais crucial, pois o sucesso da empresa depende diretamente da:
+        Em pequenas e micros empresas, a Gestão de Pessoas é ainda mais crucial, pois o sucesso da empresa depende diretamente da:
       </p>
       <ul>
         <li>Qualidade do atendimento ao cliente;</li>

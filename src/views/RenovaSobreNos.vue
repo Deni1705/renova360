@@ -20,7 +20,7 @@
       <div class="card-content" :style="{ transform: `translateX(-${currentSlide * 100}%)` }">
         <div class="card-slide">
           <h2>Nossa História</h2>
-          <p>Fundada em Curitiba, nossa missão é transformar desafios em resultados através de soluções inovadoras em Consultoria e Treinamento. Contamos com uma equipe multidisciplinar, especializada nas áreas comercial, financeira, estratégica, gestão de pessoas, marketing e operação, sempre focada na excelência e na adaptação às necessidades do segmento de Saúde, Beleza e Bem Estar.</p>
+          <p>Fundada em Curitiba, nossa missão é transformar desafios em resultados através de soluções inovadoras em Consultoria e Treinamento. Contamos com uma equipe multidisciplinar, especializada nas áreas comercial, financeira, estratégica, gestão de pessoas, marketing e operação, sempre focada na excelência e na adaptação às necessidades do pequeno e micro empresário.</p>
         </div>
         <div class="card-slide">
           <h2>Missão, Visão e Valores</h2>
@@ -31,7 +31,7 @@
             </div>
             <div class="mvv-item">
               <h3>Visão</h3>
-              <p>Ser referência nacional em consultoria e treinamento, contribuindo para a evolução dos setores de Saúde, Beleza e Bem Estar.</p>
+              <p>Ser referência nacional em consultoria e inovação, contribuindo para a evolução do pequeno e micro empresário.</p>
             </div>
             <div class="mvv-item">
               <h3>Valores</h3>
@@ -50,24 +50,42 @@
           <h2>Nossa Equipe</h2>
           <div class="team-members">
             <div class="team-member">
-              <img src="../assets/foto1.jpeg" alt="Lucia Cleia Goulart Marques" class="team-photo">
+              <img src="../assets/foto_Cleia0810.jpg" alt="Lucia Cleia Goulart Marques" class="team-photo">
               <div class="team-info">
                 <h3>LUCIA CLEIA GOULART MARQUES</h3>
-                <p>Administradora, especialista em gestão de projetos, gestão de pessoas e estratégia empresarial.</p>
+                <p>Administradora especializada em gestão de projetos, gestão de pessoas e estratégia empresarial. Fundadora da Renova360, ela alia visão estratégica e 
+                  liderança exemplar para impulsionar projetos que promovem crescimento sustentável e inovação. Sua habilidade em coordenar equipes e desenvolver soluções 
+                  eficazes posiciona a Renova360 como uma referência no mercado. Comprometida com a excelência e a transformação organizacional, é movida pela paixão em criar 
+                  resultados que fazem a diferença.</p>
               </div>
             </div>
             <div class="team-member">
-              <img src="../assets/foto2.jpeg" alt="Jessica Bernart" class="team-photo">
+              <img src="../assets/foto_Jessica0810.jpg" alt="Jessica Bernart" class="team-photo">
               <div class="team-info">
                 <h3>JESSICA BERNART</h3>
-                <p>Administradora, especialista em gestão de clínicas de estética e social media manager.</p>
+                <p>Administradora especializada em gestão de clínicas de estética e Social Media Manager. Com uma visão estratégica e uma combinação rara de habilidades 
+                  administrativas e expertise em marketing digital, ela desenvolve soluções integradas que impulsionam tanto a eficiência operacional quanto a presença digital. 
+                  Seu trabalho se traduz em maior visibilidade, engajamento e fidelização de clientes, sempre com compromisso com a excelência e inovação.</p>
               </div>
             </div>
             <div class="team-member">
               <img src="../assets/foto3.jpeg" alt="Waldenize Rodrigues" class="team-photo">
               <div class="team-info">
                 <h3>WALDENIZE RODRIGUES</h3>
-                <p>Administradora, coach pessoal e profissional, especialista em programação neurolinguistica e desenvolvimento de grupos e psicóloga em formação.</p>
+                <p>Administradora, coach pessoal e profissional, especialista em Programação Neurolinguística e desenvolvimento de grupos, além de psicóloga em formação. 
+                  Com uma abordagem integrativa e focada no desenvolvimento humano, ela combina habilidades em gestão e técnicas avançadas de coaching para promover transformação 
+                  pessoal e coletiva. Sua expertise permite alinhar objetivos individuais e organizacionais, sempre com foco no bem-estar, na excelência e em resultados impactantes. 
+                  Dedicada à evolução contínua, é uma profissional movida pela paixão em inspirar e transformar vidas.</p>
+              </div>
+            </div>
+            <div class="team-member">
+              <img src="../assets/foto_henrique0810.png" alt="Luiz Henrique Goulart Filho" class="team-photo">
+              <div class="team-info">
+                <h3>LUIZ HENRIQUE GOULART FILHO</h3>
+                <p>Engenheiro Agrônomo com especialização em Inteligência Artificial, Arquiteto em formação e talentoso desenhista de caricaturas. Sua combinação única de 
+                  conhecimento técnico, criatividade artística e abordagem interdisciplinar se traduz em soluções inovadoras e versáteis para projetos complexos. Um profissional 
+                  comprometido com a excelência, capaz de alinhar precisão científica à sensibilidade estética, enriquecendo nossa equipe e contribuindo para o desenvolvimento de 
+                  ideias fora do comum.</p>
               </div>
             </div>
           </div>

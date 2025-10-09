@@ -28,6 +28,11 @@ const routes = [
     component: () => import('@/views/RenovaContato.vue')
   },
   {
+    path: '/parceiros',
+    name: 'RenovaParceiros',
+    component: () => import('@/views/RenovaParceiros.vue')
+  },
+  {
     path: '/solucoes',
     name: 'Solucoes',
     component: () => import('@/views/Solucoes.vue')
