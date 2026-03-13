@@ -23,6 +23,7 @@
           <router-link to="/solucoes/marketing-e-comunicacao" class="navbar-item" @click="closeMenu">Marketing e Comunicação</router-link>
           <router-link to="/solucoes/operacao" class="navbar-item" @click="closeMenu">Operação</router-link>
           <router-link to="/solucoes/sustentabilidade-esg" class="navbar-item" @click="closeMenu">Sustentabilidade e ESG</router-link>
+          <router-link to="/solucoes/bpo-financeiro" class="navbar-item" @click="closeMenu">BPO Financeiro</router-link>
         </div>
       </div>
       <router-link to="/eventos" class="navbar-item" @click="closeMenu"><strong>Eventos</strong></router-link>

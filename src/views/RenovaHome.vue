@@ -13,34 +13,18 @@
       </div>
     </section>
 
-    <!-- Bloco Reconecta com movimento -->
-    <section class="reconecta-hero">
-      <div class="reconecta-glass">
-        <div class="reconecta-anim">
-          <!-- Animação CSS: círculos pulsantes -->
-          <div class="pulse-circle circle1"></div>
-          <div class="pulse-circle circle2"></div>
-          <div class="pulse-circle circle3"></div>
-          <img src="../assets/reconecta-icon.png" alt="Reconecta Ícone" class="reconecta-icon" />
-        </div>
-        <div class="reconecta-text">
-          <h2>
-            <span class="highlight">Programa Reconecta</span>
-          </h2>
-          <p class="subtitle">
-            Uma jornada sensorial e imersiva, focada nos <b>6 sentidos</b>, que coloca o seu time no centro do autocuidado, mostrando que a sua empresa se preocupa com a saúde mental dos seus colaboradores.
-          </p>
-          <ul>
-            <li>Melhoria do bem-estar</li>
-            <li>Engajamento e motivação</li>
-            <li>Diferenciação no mercado</li>
-            <li>Cultura de cuidado</li>
-          </ul>
-          <button class="reconecta-cta" @click="navigateToReconecta">Quero saber mais</button>
+    <!-- Nova Seção de Destaque para BPO Financeiro -->
+    <section class="bpo-hero">
+      <div class="bpo-hero-content">
+        <h1>BPO Financeiro para PME <span class="highlight-bpo"></span></h1>
+        <p>Transforme a gestão financeira da sua empresa com a Renova360.<br> Clareza, controle e decisões baseadas em dados.</p>
+        <div class="bpo-cta-buttons">
+          <button @click="navigateToBPO" class="cta-button-bpo primary">Conhecer Mais</button>
+          <button @click="contact" class="cta-button-bpo secondary">Fale Conosco</button>
         </div>
       </div>
     </section>
-    <!-- Fim do bloco Reconecta -->
+    <!-- Fim da Nova Seção de Destaque -->
 
     <section class="about-brief">
       <h2>Sobre Nós</h2>
@@ -108,8 +92,8 @@ export default {
     navigateToSolution(solution) {
       this.$router.push(`/solucoes/${solution}`);
     },
-    navigateToReconecta() {
-      this.$router.push('/reconecta');
+    navigateToBPO() {
+      this.$router.push('/solucoes/bpo-financeiro'); // Esta rota será criada no próximo passo
     }
   }
 }
@@ -178,158 +162,6 @@ export default {
     }
   }
 
-  /* Bloco Reconecta com movimento */
-  .reconecta-hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 60vh;
-    background: none;
-    animation: fadeIn 1s;
-  }
-
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(30px);}
-    to { opacity: 1; transform: none;}
-  }
-
-  .reconecta-glass {
-    display: flex;
-    align-items: center;
-    gap: 32px;
-    background: rgba(255,255,255,0.25);
-    box-shadow: 0 8px 32px 0 rgba(31,38,135,0.10);
-    backdrop-filter: blur(12px);
-    border-radius: 24px;
-    padding: 36px 48px;
-    border: 1px solid rgba(255,255,255,0.18);
-    animation: glassIn 1.2s;
-  }
-
-  @keyframes glassIn {
-    from { opacity: 0; transform: scale(0.95);}
-    to { opacity: 1; transform: scale(1);}
-  }
-
-  .reconecta-anim {
-    position: relative;
-    width: 140px;
-    height: 140px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .pulse-circle {
-    position: absolute;
-    border-radius: 50%;
-    opacity: 0.5;
-    animation: pulse 2.5s infinite;
-  }
-  .circle1 {
-    width: 120px; height: 120px;
-    background: #D35F8E;
-    left: 10px; top: 10px;
-    animation-delay: 0s;
-  }
-  .circle2 {
-    width: 80px; height: 80px;
-    background: #2F6999;
-    left: 30px; top: 30px;
-    animation-delay: 0.8s;
-  }
-  .circle3 {
-    width: 50px; height: 50px;
-    background: #60AA5F;
-    left: 45px; top: 45px;
-    animation-delay: 1.6s;
-  }
-  @keyframes pulse {
-    0% { transform: scale(0.95); opacity: 0.6;}
-    70% { transform: scale(1.15); opacity: 0.15;}
-    100% { transform: scale(0.95); opacity: 0.6;}
-  }
-  .reconecta-icon {
-    position: relative;
-    width: 60px;
-    height: 60px;
-    z-index: 2;
-    border-radius: 50%;
-    background: #fff;
-    padding: 8px;
-    box-shadow: 0 2px 8px rgba(47,105,153,0.08);
-    object-fit: contain;
-  }
-
-  .reconecta-text {
-    max-width: 440px;
-    text-align: left;
-  }
-
-  .reconecta-text h2 {
-    font-size: 2.3rem;
-    color: #2F6999;
-    margin-bottom: 0.5rem;
-  }
-
-  .reconecta-text .highlight {
-    background: linear-gradient(90deg, #D35F8E 40%, #2F6999 100%);
-    color: #fff;
-    padding: 0.2em 0.6em;
-    border-radius: 8px;
-    font-weight: bold;
-    box-shadow: 0 2px 8px rgba(211,95,142,0.08);
-  }
-
-  .reconecta-text .subtitle {
-    color: #866793;
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-  }
-
-  .reconecta-text ul {
-    margin: 0 0 1.2rem 0;
-    padding: 0;
-    list-style: none;
-  }
-  .reconecta-text ul li {
-    margin-bottom: 0.5rem;
-    font-size: 1rem;
-    color: #2F6999;
-    font-weight: 500;
-    position: relative;
-    padding-left: 22px;
-  }
-  .reconecta-text ul li::before {
-    content: "✔";
-    color: #60AA5F;
-    position: absolute;
-    left: 0;
-    font-size: 1.1em;
-  }
-
-  .reconecta-cta {
-    background: linear-gradient(90deg, #2F6999 60%, #D35F8E 100%);
-    color: #fff;
-    border: none;
-    border-radius: 30px;
-    padding: 12px 32px;
-    font-size: 1.1rem;
-    font-weight: 700;
-    cursor: pointer;
-    box-shadow: 0 2px 8px rgba(47,105,153,0.08);
-    transition: transform 0.15s, box-shadow 0.15s;
-    animation: pulseBtn 1.5s infinite;
-  }
-  @keyframes pulseBtn {
-    0% { box-shadow: 0 0 0 0 rgba(211,95,142,0.15);}
-    70% { box-shadow: 0 0 0 12px rgba(211,95,142,0);}
-    100% { box-shadow: 0 0 0 0 rgba(211,95,142,0);}
-  }
-  .reconecta-cta:hover {
-    transform: scale(1.05);
-    background: linear-gradient(90deg, #D35F8E 60%, #2F6999 100%);
-  }
-
   .about-brief,
   .solutions-highlight {
     max-width: 1200px;
@@ -372,7 +204,8 @@ export default {
 }
 
 @media (max-width: 900px) {
-  .reconecta-glass {
+  /* Não há mais .reconecta-glass, então esta media query pode ser removida ou adaptada se houver outros elementos */
+  /* .reconecta-glass {
     flex-direction: column;
     gap: 16px;
     padding: 24px 12px;
@@ -380,7 +213,7 @@ export default {
   }
   .reconecta-text {
     text-align: center;
-  }
+  } */
 }
 @media (max-width: 768px) {
   .renova-home {
@@ -398,6 +231,108 @@ export default {
 
     .solutions-grid {
       grid-template-columns: 1fr;
+    }
+  }
+}
+
+/* Estilos para a Nova Seção de Destaque BPO Financeiro - AJUSTADO PARA FUNDO NORMAL */
+.bpo-hero {
+  // REMOVIDO: background-image: url('../assets/Img_grafico.jpg');
+  background-color: #f8f9fa; // Fundo claro, similar ao rodapé e outras seções
+  // REMOVIDO: background-size: cover;
+  // REMOVIDO: background-position: center;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #2F6999; // Cor do texto ajustada para fundo claro
+  position: relative;
+  margin-bottom: 4rem;
+
+  // REMOVIDO: &::before (o overlay escuro)
+
+  .bpo-hero-content {
+    max-width: 900px;
+    padding: 2rem;
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.9); // Fundo mais opaco para o conteúdo, destacando-o
+    border-radius: 10px;
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,0.10);
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #2F6999; // Cor do título ajustada para fundo claro
+    text-shadow: none; // Removido sombra do texto
+  }
+
+  .highlight-bpo {
+    color: #D35F8E; // Cor de destaque da sua paleta
+  }
+
+  p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    color: #2F6999; // Cor do parágrafo ajustada para fundo claro
+    text-shadow: none; // Removido sombra do texto
+  }
+
+  .bpo-cta-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+
+    .cta-button-bpo {
+      padding: 1rem 2.5rem;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+
+      &.primary {
+        background-color: #D35F8E; // Cor de destaque
+        color: #ffffff;
+        &:hover {
+          background-color: darken(#D35F8E, 10%);
+          transform: translateY(-3px);
+        }
+      }
+
+      &.secondary {
+        background-color: transparent;
+        border: 2px solid #2F6999; // Borda ajustada para a cor primária
+        color: #2F6999; // Texto ajustado para a cor primária
+        &:hover {
+          background-color: rgba(47, 105, 153, 0.1); // Usar a cor primária com transparência no hover
+          transform: translateY(-3px);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .bpo-hero {
+    height: auto;
+    min-height: 50vh;
+    .bpo-hero-content {
+      h1 {
+        font-size: 2.2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+      .bpo-cta-buttons {
+        flex-direction: column;
+        .cta-button-bpo {
+          width: 100%;
+        }
+      }
     }
   }
 }

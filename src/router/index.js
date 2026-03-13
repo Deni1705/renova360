@@ -73,6 +73,11 @@ const routes = [
     component: () => import('@/views/solucoes/SustentabilidadeESG.vue')
   },
   {
+    path: '/solucoes/bpo-financeiro', 
+    name: 'BPOFinanceiro', 
+    component: () => import('@/views/solucoes/BPOFinanceiro.vue') 
+  },
+  {
     path: '/termos-de-uso',
     name: 'TermosDeUso',
     component: () => import('@/components/RenovaTermosDeUso.vue')
